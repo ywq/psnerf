@@ -44,8 +44,8 @@ sh download.sh
 ```
 If the above command is not working, please manually download the files:
 - Released models of SDPS-Net from Google Drive ([LCNet and NENet](https://drive.google.com/drive/folders/1HCW9YDfsFoPxda3GDTjj3L5yuQUXw8a3?usp=sharing)) and put them in `preprocessing/data/models/`;
-- Trained models of our method from OneDrive ([data.tgz](https://connecthkuhk-my.sharepoint.com/:f:/g/personal/wenqi_connect_hku_hk/Et3Qh3fV3H9Lk71Bln0YEQABBzu8eBUfTp44dcqtaz18sQ?e=WUCR12)) and put the extracted folder `data/` under the root path;
-- Preprocessed dataset of both synthetic and real objects from OneDrive ([dataset.tgz](https://connecthkuhk-my.sharepoint.com/:f:/g/personal/wenqi_connect_hku_hk/Et3Qh3fV3H9Lk71Bln0YEQABBzu8eBUfTp44dcqtaz18sQ?e=WUCR12)) and put the extracted folder `dataset/` under the root path;
+- Trained models of our method from OneDrive ([data.tgz](https://connecthkuhk-my.sharepoint.com/:f:/g/personal/wenqi_connect_hku_hk/Et3Qh3fV3H9Lk71Bln0YEQABBzu8eBUfTp44dcqtaz18sQ?e=WUCR12)) and put the extracted folder `data/` under the project path;
+- Preprocessed dataset of both synthetic and real objects from OneDrive ([dataset.tgz](https://connecthkuhk-my.sharepoint.com/:f:/g/personal/wenqi_connect_hku_hk/Et3Qh3fV3H9Lk71Bln0YEQABBzu8eBUfTp44dcqtaz18sQ?e=WUCR12)) and put the extracted folder `dataset/` under the project path;
 - Environment maps for relighting application from OneDrive ([envmap.tgz](https://connecthkuhk-my.sharepoint.com/:f:/g/personal/wenqi_connect_hku_hk/Et3Qh3fV3H9Lk71Bln0YEQABBzu8eBUfTp44dcqtaz18sQ?e=WUCR12)) and put the extracted folder `envmap/` under `stage2/`.
 
 ### Dataset
