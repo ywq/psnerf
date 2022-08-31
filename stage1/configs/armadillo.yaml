@@ -1,0 +1,60 @@
+model:
+  num_layers: 8
+  hidden_dim: 256
+  octaves_pe: 6
+  octaves_pe_views: 4
+  skips: [4]
+  geometric_init: True
+  feat_size: 256
+  rescale: 1.0
+rendering:
+  type: unisurf
+  n_max_network_queries: 64000
+  white_background: True
+  near: 2
+  far : 6
+  radius: 2.0
+  interval_start: 2.0 
+  interval_end: 0.1
+  interval_decay: 0.000015
+  num_points_in: 64
+  num_points_out: 32
+  ray_marching_steps: 256
+  occ_prob_points: 64
+dataloading:
+  obj_name : armadillo 
+  data_dir: ../dataset/armadillo
+  train_view: 15
+  # train_light: 8
+  # all_view: False
+  # inten_normalize: sdps 
+  batchsize: 1
+  n_workers: 8
+training:
+  type: unisurf
+  out_dir:  out/armadillo/test_1/
+  normal_loss: True
+  normal_after: 1000
+  normal_angle: 65
+  lambda_normloss: 0.05
+  # mask_black: True
+  est_norm : True
+  # mask_loss: True
+  lambda_mask: 1.0
+  mask_valid : True
+  mask_loss_type: acc
+  n_training_points: 2048
+  learning_rate: 0.0001
+  weight_decay: 0.0
+  scheduler_milestones: [4000, 8000]
+  scheduler_gamma: 0.5
+  visualize_every: 10000
+  print_every: 200
+  backup_every: 10000
+  checkpoint_every: 5000
+  lambda_l1_rgb: 1.0
+  lambda_normals: 0.005
+extraction:
+  refinement_step: 0
+  upsampling_steps: 3
+  resolution: 64

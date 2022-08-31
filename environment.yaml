@@ -1,0 +1,43 @@
+name: psnerf
+channels:
+  - pyg
+  - pytorch
+  - conda-forge
+  - anaconda
+  - defaults
+dependencies:
+  - python
+  - pytorch=1.8.0 
+  - pytorch-cluster
+  - torchvision 
+  - torchaudio 
+  - cudatoolkit=11.1
+  - cffi
+  - cython
+  - imageio=2.9.0
+  - numpy
+  - scipy
+  - matplotlib
+  - pandas
+  - tensorboard
+  - yaml
+  - pillow=8.2.0
+  - wheel
+  - pip
+  - tqdm
+  - pip:
+    - ipdb
+    - ipython==7.24.0
+    - ipython-genutils
+    - jedi
+    - opencv-python
+    - scikit-image
+    - pyyaml
+    - trimesh
+    - configargparse
+    - imageio-ffmpeg
+    - GPUtil
+    - pyhocon
+    - tensorboardX
+    - plotly
+    - lpips 
