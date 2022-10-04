@@ -53,3 +53,9 @@ If you are interested in testing on the first stage, we also provide testing and
     # --load_iter N_ITER              # load from specific iteration
     # --mesh_extension EXTENSION      # choose mesh extension (obj or ply, default: obj)
     ```
+    For evaluation on the extracted mesh (Chamfer Distance), run
+    ```bash
+    python ../chamfer_dist.py --mesh_gt GT_MESH_PATH --mesh_pred PRED_MESH_PATH
+    ## other optional arguments
+    # --num_samples NUM_SAMPLES         # number of sampled surface points for calculating Chamfer Distance
+    ```

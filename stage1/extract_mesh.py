@@ -40,6 +40,7 @@ if args.refinement_step != -1:
     cfg['extraction']['refinement_step'] = args.refinement_step
 
 test_out_path = os.path.join(args.test_out_dir,args.obj_name, args.expname)
+os.makedirs(test_out_path,exist_ok=True)
 
 # Model
 model = NeuralNetwork(cfg)

@@ -57,6 +57,16 @@ After downloaded and extracted, you can find the processed datasets in `./datase
 ### Model
 We release the pretrained models of the 5 real scenes. After downloaded and extracted, you can find them in `./data` folder.
 
+### Objects
+Additionally, if you want to evaluate the mesh, you may run the following command or manually download the rescaled ground-truth objects from OneDrive ([objects.tgz](https://connecthkuhk-my.sharepoint.com/:f:/g/personal/wenqi_connect_hku_hk/Et3Qh3fV3H9Lk71Bln0YEQABBzu8eBUfTp44dcqtaz18sQ?e=WUCR12)).
+```bash
+# Download objects
+wget http://www.visionlab.cs.hku.hk/data/psnerf/objects.tgz
+tar -xzvf dataset.tgz
+rm objects.tgz
+```
+The file `trans.json` stores the transformation parameters. You may also get the rescaled objects from [DiLiGenT-MV Dataset](https://sites.google.com/site/photometricstereodata/mv?authuser=0) by `vertices_new = (vertices - center) / scale`. (Objects in `objects.tgz` are already rescaled.)
+
 
 
 ##  Test & Evaluation
