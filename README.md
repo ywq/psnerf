@@ -54,6 +54,20 @@ The real dataset was processed from [DiLiGenT-MV Dataset](https://sites.google.c
 The synthetic dataset was rendered using [Mitsuba](https://www.mitsuba-renderer.org/), which contains 2 objects `BUNNY`, `ARMADILLO`.
 
 After downloaded and extracted, you can find the processed datasets in `./dataset` folder.
+
+### Convert DiLiGenT-MV Data
+If you have downloaded the raw DiLiGenT-MV dataset you can reorganize an object
+into the above directory layout using `scripts/convert_diligent_mv.py`. The
+script copies the images and calibration files and generates the required
+`params.json`:
+
+```bash
+python scripts/convert_diligent_mv.py /path/to/DiLiGenT-MV/BEAR ./dataset/bear
+```
+
+The command assumes that camera intrinsics, extrinsics and light directions are
+available under `calib/` of the source folder and images are grouped by view in
+`images/view_*/`.
 ### Model
 We release the pretrained models of the 5 real scenes. After downloaded and extracted, you can find them in `./data` folder.
 
